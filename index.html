@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script data-require="angular.js@1.6.1" data-semver="1.6.1" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.css" integrity="sha256-Ju6812ufi1PkAvKVu7myA4uw5aYWyZoeL5GHNCn0AMk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.min.css" integrity="sha256-4hblV1uSaPQqT+NtIEL4/IKzKE42/3DbJ6yfxWba24k=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.js" integrity="sha256-7OT8H6uxStHOJMZE2TeZfI960JyEgNPn9+DEAvamJPg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.10/js/bootstrap-select.js" integrity="sha256-GwAMtRKq8ocZyBdgm1wX+tzd2/nDbb2UGulIdqOItiU=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-app="app" ng-controller="MyCtrl">
+    <select ng-model="selectedOption" ng-options="x.id as x.label for x in theOptions">
+      <option value="">Select</option>
+    </select>
+  </body>
+
+</html>
